@@ -1,0 +1,42 @@
+#include <iostream>
+#include <conio.h>
+#include <string>
+
+using namespace std;
+
+int main()
+{
+	int a, b, c, size, rev;
+	char in[30];
+	
+	cout << "Enter Array Size: ";
+	cin >> size;
+	
+	cout << "Enter Array Elements: ";
+	for (a = 0; a <size; a++)
+	{
+		cin >> in[a];
+	}
+	
+	for(a= 0; a<size; a++)
+	{
+		for(b = a+1; b < size; b++)
+		{
+			if(in[a]>in[b])
+			{
+				rev = in[a];
+				in[a] = in[b];
+				in[b] = rev;
+			}
+		}
+	}
+	
+	cout << "Elements: ";
+	for(a = 0; a < size; a++)
+	{
+		cout << in[a];
+	}
+	
+	_getch();
+	return 0;
+}
