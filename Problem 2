@@ -1,0 +1,42 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+int main()
+{
+	int daytempa[7], daytempb[7], daytempc[7];
+	int day, a;
+
+		cout << "Enter Temperature for Province A: " "\n";
+		for (a = 0; a < 7; a++)
+			cin >> daytempa[a];
+			
+		cout << "\n";
+
+		cout << "Enter Temperature for Province B: " "\n";
+		for (a = 0; a < 7; a++)
+			cin >> daytempb[a];
+
+		cout << "\n";
+
+		cout << "Enter Temperature for Province C: " "\n";
+		for (a = 0; a < 7; a++)
+			cin >> daytempc[a];
+			
+			for (a = 0; a < 7; a++)
+				cout << "Province A, Day " << a+1 << "= " << daytempa[a] << endl;
+				cout << "\n";
+			for (a = 0; a < 7; a++)
+				cout << "Province B, Day " << a+1 << "= " << daytempb[a] << endl;
+				cout << "\n";
+			for (a = 0; a < 7; a++)
+				cout << "Province C, Day " << a+1 << "= " << daytempc[a] << endl;
+				cout << "\n";
+
+				
+	_getch();
+	return 0;
+
+}
+
