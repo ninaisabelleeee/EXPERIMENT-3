@@ -22,7 +22,7 @@ int main()
 	{
 		for(b = a+1; b < size; b++)
 		{
-			if(in[a]>in[b])
+			if(in[a]<in[b])
 			{
 				rev = in[a];
 				in[a] = in[b];
